@@ -39,6 +39,6 @@ body {
 @media (min-width: 500px) {
 	.clock {
 		zoom: 1.0;
-		-moz-transform: scale(0.8);
+		-moz-transform: scale(1.0);
 	}
 }
