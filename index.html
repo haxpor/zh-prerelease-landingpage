@@ -9,13 +9,12 @@
     <meta name="author" content="secret character">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Zombie Hero : Revenge of Kiki - 29 Oct Available on App Store</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/flipclock.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,6 +53,9 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
+        <header class="clockWrapper">
+            <div class="clock"></div>
+        </header>
         <h1>Hello, world!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
@@ -61,7 +63,6 @@
     </div>
 
     <div class="container">
-      <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
           <h2>Heading</h2>
@@ -69,14 +70,38 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
-    </div> <!-- /container -->
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+    </div>
 
     <hr>
 
     <div class="container">
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
+      <div class="row">
+        <div class="col-md-12">
+            <footer>
+                <p>&copy; Company 2015</p>
+            </footer>
+        </div>
+      </div>
     </div>
 
 
@@ -85,8 +110,30 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script src="js/moment.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Countdown clock -->
+    <script type="text/javascript">
+        var clock;
+        
+        $(document).ready(function() {
+
+            clock = $('.clock').FlipClock(10, {
+                clockFace: 'HourlyCounter',
+                countdown: true,
+                callbacks: {
+                    stop: function() {
+                        $('.message').html('The clock has stopped!');
+                    }
+                }
+            });
+
+        });
+        
+    </script>
   </body>
 </html>
 

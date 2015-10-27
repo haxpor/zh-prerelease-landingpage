@@ -1,0 +1,44 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.clockWrapper {
+	padding: 45px 0 50px 0;
+}
+
+.clock {
+	width: 500px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+@media (min-width: 320px) {
+	.clock {
+		zoom: 0.6;
+
+		-moz-transform: scale(0.6);
+	}
+}
+
+@media (min-width: 375px) {
+	.clock {
+		zoom: 0.7;
+		-moz-transform: scale(0.7);
+	}
+}
+
+@media (min-width: 414px) {
+	.clock {
+		zoom: 0.8;
+		-moz-transform: scale(0.8);
+	}
+}
+
+@media (min-width: 500px) {
+	.clock {
+		zoom: 1.0;
+		-moz-transform: scale(0.8);
+	}
+}
