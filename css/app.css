@@ -3,6 +3,16 @@
 	src: url('../fonts/SFSlapstickComic.ttf') format('truetype'), url('../fonts/SFSlapstickComic.otf') format('opentype');
 }
 
+#social-facebook {
+	width: 247px;
+}
+#social-twitter {
+	width: 211px;
+}
+#social-presskit {
+	width: 137px;
+}
+
 body {
   padding-top: 50px;
 }
@@ -53,10 +63,10 @@ ul.nav {
 	font-family: "SFSlapstickComic", "Helvetica Neue", Arial, sans-serif;
 	padding: 20px 0;
 	background-color: gray;
-	
 }
 .middleSection h1 {
 	font-size: 70px;
+	text-shadow: 2px 2px #eeeeee;
 }
 .middleSection p {
 	font-size: 25px;
@@ -66,11 +76,11 @@ ul.nav {
 	
 }
 .kikiSection img {
-	width: 70%;
+	width: 80%;
 }
 
 .maskHeroSection {
-	background-color: red;
+	background-color: #f74c3c;
 }
 .maskHeroSection img {
 	width: 85%;
@@ -108,11 +118,13 @@ ul.nav {
 	background-color: #000
 }
 .socialSection div.socialPadding {
-	padding: 12px 50px;
+	padding: 12px 0px;
+	text-align: center;
 }
 
 .emphasize {
 	color: white;
+	text-shadow: 2px 2px #444444;
 }
 
 footer {
@@ -123,6 +135,7 @@ footer {
 	font-size: 15px;
 	color: rgb(240, 240, 240);
 	text-align: right;
+	text-shadow: 2px 2px #111111;
 }
 
 footer div.copyright {
@@ -166,6 +179,8 @@ footer div.copyright {
 	.gifSection img.gif {
 		width: 100%;
 	}
+
+
 }
 
 @media (min-width: 414px) {
