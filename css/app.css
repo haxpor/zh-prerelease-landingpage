@@ -1,11 +1,24 @@
+@font-face {
+	font-family: SFSlapstickComic;
+	src: url('../fonts/SFSlapstickComic.ttf') format('truetype'), url('../fonts/SFSlapstickComic.otf') format('opentype');
+}
+
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
 
-.clockWrapper {
-	padding: 45px 0 50px 0;
+ul.nav, .consistentContent, .navbar-brand {
+	font-family: "SFSlapstickComic", "Helvetica Neue", Arial, sans-serif;
+}
+
+.navbar-brand {
+	font-size: 22px;
+}
+
+ul.nav {
+	font-size: 22px;
 }
 
 .clock {
@@ -14,7 +27,31 @@ body {
 	margin: 0 auto;
 }
 
-@media (min-width: 320px) {
+.topSection {
+	text-align: center;
+	background-image: url('../images/feature-banner-2.png');
+	background-repeat: no-repeat;
+	background-position: 50% center;
+	color: white;
+	padding: 100px 0 50px 0;
+	height: 300px;
+}
+
+.flip-clock-label {
+	font-family: "SFSlapstickComic", "Helvetica Neue", Arial, sans-serif;
+	font-size: 20px;
+}
+
+.flip-clock-divider .flip-clock-label {
+	color: white;
+	text-align: center;
+}
+
+.flip-clock-dot {
+	background: rgb(160,160,160);
+}
+
+@media (min-width: 300px) {
 	.clock {
 		zoom: 0.6;
 
