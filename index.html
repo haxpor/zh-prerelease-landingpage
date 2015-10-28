@@ -129,9 +129,12 @@
     <script type="text/javascript">
         var clock;
 
-        function removeClock() {
+        function timeUp() {
+            // remove clock
             var c = document.getElementById('clock');
             c.parentNode.removeChild(c);
+
+            // TODO: Do anything after timeup
         }
         
         $(document).ready(function() {
@@ -141,7 +144,7 @@
                 countdown: true,
                 callbacks: {
                     stop: function() {
-                        removeClock();
+                        timeUp();
                     }
                 }
             });
