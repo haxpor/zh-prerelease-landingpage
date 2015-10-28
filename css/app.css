@@ -116,12 +116,16 @@ ul.nav {
 
 footer {
 	background-color: #f74c3c;
-	padding-top: 150px;
+	padding-top: 80px;
 	padding-bottom: 30px;
+	font-family: "SFSlapstickComic", "Helvetica Neue", Arial, sans-serif;
+	font-size: 15px;
+	color: rgb(240, 240, 240);
+	text-align: right;
 }
 
-footer img {
-	width: 10%;
+footer div.copyright {
+	margin: 20px 0;
 }
 
 @media (min-width: 300px) {
