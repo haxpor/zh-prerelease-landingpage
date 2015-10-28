@@ -13,7 +13,7 @@
 
     <!-- CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/flipclock.css" rel="stylesheet">
+    <!--<link href="css/flipclock.css" rel="stylesheet">-->
     <link href="css/app.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -56,7 +56,9 @@
 
     <div class="appstoreSection">
         <div class="container">
-            <div class="appstore" id="appstore"></div>
+            <div class="appstore" id="appstore">
+                <a href="https://itunes.apple.com/app/zombie-hero-revenge-of-kiki/id904184868?mt=8" target="_blank"><img src="images/avalAppStore.svg" width="200px"></a>
+            </div>
         </div>
     </div>
 
@@ -145,50 +147,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/flipclock.min.js"></script>
-    <script src="js/moment.min.js"></script>
+    <!--<script src="js/flipclock.min.js"></script>-->
     <script src="js/helper.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-
-    <!-- Countdown clock -->
-    <script type="text/javascript">
-        var clock;
-
-        function timeUp() {
-            // remove clock
-            var c = document.getElementById('clock');
-            c.parentNode.removeChild(c);
-
-            // get div of 'appstore'
-            var appStore = document.getElementById('appstore');
-
-            var newA = $('<a>');
-            newA.attr('href', 'https://itunes.apple.com/app/zombie-hero-revenge-of-kiki/id904184868?mt=8');
-            newA.attr('target', '_blank');
-            newA.appendTo('#appstore');
-
-            var newImg = $('<img>');
-            newImg.attr('src', 'images/avalAppStore.svg');
-            newImg.attr('width', '200px');
-            newImg.appendTo(newA);
-        }
-        
-        $(document).ready(function() {
-
-            clock = $('.clock').FlipClock(1, {
-                clockFace: 'HourlyCounter',
-                countdown: true,
-                callbacks: {
-                    stop: function() {
-                        timeUp();
-                    }
-                }
-            });
-
-        });
-        
-    </script>
 
     <!-- Google Analytic Tracking Code -->
     <script>
