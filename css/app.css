@@ -79,17 +79,12 @@ ul.nav {
 	text-align: right;
 }
 
-.gallerySection {
-
-}
-
 .videoSection {
 	text-align: center;
 	padding: 30px 0px;
 	background-image: url('../images/navMenuBg.png');
 	background-size: cover;
 }
-
 .videoSection iframe {
 	width: 70%;
 	height: 430px;
@@ -101,13 +96,19 @@ ul.nav {
 	padding: 50px;
 	text-align: center;
 }
-
 .gifSection img.gif {
 	width: 100%;
 }
-
 .gifSection div.gifWrapper {
 	padding: 0px 10px;
+}
+
+.socialSection {
+	padding: 50px;
+	background-color: #000
+}
+.socialSection div.socialPadding {
+	padding: 12px 50px;
 }
 
 .emphasize {
