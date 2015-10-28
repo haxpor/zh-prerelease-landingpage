@@ -3,10 +3,8 @@
 	src: url('../fonts/SFSlapstickComic.ttf') format('truetype'), url('../fonts/SFSlapstickComic.otf') format('opentype');
 }
 
-/* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
-  padding-bottom: 20px;
 }
 
 .jumbotron {
@@ -102,6 +100,11 @@ ul.nav {
 	margin: 100px 0;
 }
 
+.gifSection {
+	background-color: gray;
+	padding: 50px;
+}
+
 .emphasize {
 	color: white;
 }
@@ -110,7 +113,6 @@ footer {
 	background-color: #f74c3c;
 	padding-top: 150px;
 	padding-bottom: 30px;
-	margin-top: 30px;
 }
 
 footer img {
