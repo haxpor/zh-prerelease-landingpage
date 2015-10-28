@@ -39,6 +39,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#main">Main</a></li>
+            <li><a href="#download">Download</a></li>
             <li><a href="#video">Video <span class="sr-only">(current)</span></a></li>
             <li><a href="#gifs">Gifs</a></li>
             <li><a href="#connectwithus">Connect With Us</a></li>
@@ -47,9 +48,15 @@
       </div>
     </nav>
 
-    <div class="topSection">
+    <div class="topSection" id="download">
         <div class="container">
             <div class="clock" id="clock"></div>
+        </div>
+    </div>
+
+    <div class="appstoreSection">
+        <div class="container">
+            <div class="appstore" id="appstore"></div>
         </div>
     </div>
 
@@ -153,7 +160,18 @@
             var c = document.getElementById('clock');
             c.parentNode.removeChild(c);
 
-            // TODO: Do anything after timeup
+            // get div of 'appstore'
+            var appStore = document.getElementById('appstore');
+
+            var newA = $('<a>');
+            newA.attr('href', 'https://itunes.apple.com/app/zombie-hero-revenge-of-kiki/id904184868?mt=8');
+            newA.attr('target', '_blank');
+            newA.appendTo('#appstore');
+
+            var newImg = $('<img>');
+            newImg.attr('src', 'images/avalAppStore.svg');
+            newImg.attr('width', '200px');
+            newImg.appendTo(newA);
         }
         
         $(document).ready(function() {

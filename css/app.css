@@ -59,6 +59,12 @@ ul.nav {
 	background: rgb(160,160,160);
 }
 
+.appstoreSection {
+	background-color: black;
+	padding: 20px;
+	text-align: center;
+}
+
 .middleSection {
 	font-family: "SFSlapstickComic", "Helvetica Neue", Arial, sans-serif;
 	padding: 20px 0;
