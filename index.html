@@ -23,10 +23,10 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body id="main">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+      <div class="container"> 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -38,8 +38,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#whoweare">Video <span class="sr-only">(current)</span></a></li>
-            <li><a href="#get-involved">Team</a></li>
+            <li><a href="#main">Main</a></li>
+            <li><a href="#video">Video <span class="sr-only">(current)</span></a></li>
+            <li><a href="#gifs">Gifs</a></li>
+            <li><a href="#connectwithus">Connect With Us</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
@@ -81,13 +83,13 @@
       </div>
     </div>
 
-    <div class="videoSection">
+    <div class="videoSection" id="video">
       <div class="container">
         <iframe src="https://www.youtube.com/embed/gEEC5z4cuQg" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
-    <div class="gifSection">
+    <div class="gifSection" id="gifs">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 gifWrapper">
@@ -100,7 +102,7 @@
         </div>
     </div>
 
-    <div class="socialSection">
+    <div class="socialSection" id="connectwithus">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4 socialPadding">
@@ -138,6 +140,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/flipclock.min.js"></script>
     <script src="js/moment.min.js"></script>
+    <script src="js/helper.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 
