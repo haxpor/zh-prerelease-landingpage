@@ -7,10 +7,6 @@ body {
   padding-top: 50px;
 }
 
-.jumbotron {
-	margin: 0 auto;
-}
-
 ul.nav, .consistentContent, .navbar-brand {
 	font-family: "SFSlapstickComic", "Helvetica Neue", Arial, sans-serif;
 }
@@ -96,13 +92,22 @@ ul.nav {
 
 .videoSection iframe {
 	width: 70%;
-	height: 400px;
+	height: 430px;
 	margin: 100px 0;
 }
 
 .gifSection {
 	background-color: gray;
 	padding: 50px;
+	text-align: center;
+}
+
+.gifSection img.gif {
+	width: 100%;
+}
+
+.gifSection div.gifWrapper {
+	padding: 0px 10px;
 }
 
 .emphasize {
@@ -125,12 +130,36 @@ footer img {
 
 		-moz-transform: scale(0.6);
 	}
+
+	.middleSection h1 {
+		font-size: 45px;
+	}
+
+	.videoSection iframe {
+		height: 250px;
+	}
+
+	.gifSection img.gif {
+		width: 100%;
+	}
 }
 
 @media (min-width: 375px) {
 	.clock {
 		zoom: 0.7;
 		-moz-transform: scale(0.7);
+	}
+
+	.middleSection h1 {
+		font-size: 70px;
+	}
+
+	.videoSection iframe {
+		height: 250px;
+	}
+
+	.gifSection img.gif {
+		width: 100%;
 	}
 }
 
@@ -139,11 +168,47 @@ footer img {
 		zoom: 0.8;
 		-moz-transform: scale(0.8);
 	}
+
+	.middleSection h1 {
+		font-size: 70px;
+	}
+
+	.videoSection iframe {
+		height: 430px;
+	}
+
+	.gifSection img.gif {
+		width: 100%;
+	}
 }
 
 @media (min-width: 500px) {
 	.clock {
 		zoom: 1.0;
 		-moz-transform: scale(1.0);
+	}
+
+	.middleSection h1 {
+		font-size: 70px;
+	}
+
+	.videoSection iframe {
+		height: 430px;
+	}
+
+	.gifSection img.gif {
+		width: 100%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.gifSection img.gif {
+		width: 80%;
+	}
+}
+
+@media (min-width: 1070px) {
+	.gifSection img.gif {
+		width: 100%;
 	}
 }
